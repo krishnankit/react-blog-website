@@ -1,0 +1,38 @@
+.navbar {
+  background: rgb(176, 38, 255);
+  color: white;
+  padding: 20px;
+}
+
+.branding span {
+  padding: 5px;
+  background-color: white;
+  color: rgb(176, 38, 255);
+  margin-right: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.4);
+}
+
+.navbar div {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-left: 15px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.menu-item:hover {
+  box-shadow: 0 0 2px rgba(255,255,255,1);
+}

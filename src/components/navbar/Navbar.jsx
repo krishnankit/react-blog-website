@@ -1,0 +1,31 @@
+import "./navbar.css";
+import {Link} from 'react-router-dom';
+
+const Navbar = () => {
+  return (
+    <div className='navbar'>
+      <div>
+      <div className="branding">
+        <h1><span>KD</span>Blogs</h1>
+      </div>
+      <ul className="menu">
+        <li className="menu-item"><Link 
+        style={{ textDecoration: 'none', height: '100%', width: '100%', color: 'white', fontSize: '1.2rem' }} 
+        to="/">Home</Link></li>
+        <li className="menu-item"><Link 
+        style={{ textDecoration: 'none', height: '100%', width: '100%', color: 'white', fontSize: '1.2rem' }} 
+        to="/create">Create</Link></li>
+        <li className="menu-item"><Link 
+        style={{ textDecoration: 'none', height: '100%', width: '100%', color: 'white', fontSize: '1.2rem' }} 
+        to="/about">About</Link></li>
+        <li className="menu-item"><Link 
+        style={{ textDecoration: 'none', height: '100%', width: '100%', color: 'white', fontSize: '1.2rem' }} 
+        to="/contact">Contact</Link></li>
+      </ul>
+    </div>
+  </div>
+      
+  )
+}
+
+export default Navbar
