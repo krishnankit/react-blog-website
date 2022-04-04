@@ -2,8 +2,24 @@ import './home.css';
 import Navbar from '../../components/navbar/Navbar';
 import { Link } from 'react-router-dom';
 import Blog from '../../components/blog/Blog';
+import { useEffect, useState } from 'react';
+import {collection, query, onSnapshot} from "firebase/firestore";
+import {db} from "../../firebaseconfig";
 
 const Home = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const q = query(collection(db, 'blogs'))
+    onSnapshot(q, (querySnapshot) => {
+      setBlogs(querySnapshot.docs.map(doc => ({
+        id: doc.id,
+        data: doc.data()
+      })))
+    })
+    console.log(blogs);
+  },[])
+
   return (
     <div className='home'>
       <Navbar />
@@ -16,12 +32,12 @@ const Home = () => {
           </div>
       </div>
       <div className="blogs">
-        <Blog />
-        <Blog />
-        <Blog />
+        {blogs.map(blog => {
+          return <Blog key={blog.id} title={blog.data.title} description={blog.data.description} img={blog.data.img} content={blog.data.content} author={blog.data.author} />
+        })}
       </div>
       <div className='read-all'>
-        <button>Read All Blogs</button>
+        <Link to="/allblogs"><button>Read All Blogs</button></Link>
       </div>
     </div>
   </div>
