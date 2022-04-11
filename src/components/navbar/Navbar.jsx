@@ -17,9 +17,6 @@ const Navbar = () => {
         to="/create">Create</Link></li>
         <li className="menu-item"><Link 
         style={{ textDecoration: 'none', height: '100%', width: '100%', color: 'white', fontSize: '1.2rem' }} 
-        to="/about">About</Link></li>
-        <li className="menu-item"><Link 
-        style={{ textDecoration: 'none', height: '100%', width: '100%', color: 'white', fontSize: '1.2rem' }} 
         to="/contact">Contact</Link></li>
       </ul>
     </div>

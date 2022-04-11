@@ -1,7 +1,7 @@
 import "./blog.css"
 import { Link } from 'react-router-dom'
 
-const Blog = ({title,description, author, img, content}) => {
+const Blog = ({id, title,description, author, img}) => {
   return (
     <div className="blog">
       <h1 className="title">{title}</h1>
@@ -12,7 +12,7 @@ const Blog = ({title,description, author, img, content}) => {
       <p className="des">
         {description}
       </p>
-      <Link className='read-more' to='/'><button>Read More</button></Link>
+      <Link className='read-more' to={`/blog/${id}`}><button>Read More</button></Link>
     </div>
   )
 }

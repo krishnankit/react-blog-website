@@ -17,7 +17,6 @@ const Home = () => {
         data: doc.data()
       })))
     })
-    console.log(blogs);
   },[])
 
   return (
@@ -33,7 +32,7 @@ const Home = () => {
       </div>
       <div className="blogs">
         {blogs.map(blog => {
-          return <Blog key={blog.id} title={blog.data.title} description={blog.data.description} img={blog.data.img} content={blog.data.content} author={blog.data.author} />
+          return <Blog key={blog.id} id={blog.id} title={blog.data.title} description={blog.data.description} img={blog.data.img} author={blog.data.author} />
         })}
       </div>
       <div className='read-all'>
