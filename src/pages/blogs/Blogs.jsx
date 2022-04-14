@@ -4,6 +4,7 @@ import { db } from "../../firebaseconfig";
 import { query, onSnapshot, collection } from "firebase/firestore";
 import Blog from "../../components/blog/Blog";
 import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -26,6 +27,7 @@ const Blogs = () => {
             return <Blog key={blog.id} title={blog.data.title} description={blog.data.description} img={blog.data.img} content={blog.data.content} author={blog.data.author} />
           })}
       </div>
+      <Footer />
     </div>
   )
 }

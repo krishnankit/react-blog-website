@@ -1,5 +1,6 @@
 import './contact.css';
 import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 const Contact = () => {
   return (
@@ -26,6 +27,7 @@ const Contact = () => {
             <button>Submit</button>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

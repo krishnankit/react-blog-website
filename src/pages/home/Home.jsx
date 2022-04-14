@@ -5,6 +5,7 @@ import Blog from '../../components/blog/Blog';
 import { useEffect, useState } from 'react';
 import {collection, query, onSnapshot} from "firebase/firestore";
 import {db} from "../../firebaseconfig";
+import Footer from '../../components/footer/Footer';
 
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
@@ -39,6 +40,7 @@ const Home = () => {
         <Link to="/allblogs"><button>Read All Blogs</button></Link>
       </div>
     </div>
+    <Footer />
   </div>
   )
 }
