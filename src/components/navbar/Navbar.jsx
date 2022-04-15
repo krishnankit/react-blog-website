@@ -14,7 +14,7 @@ const Navbar = () => {
         to="/">Home</Link></li>
         <li className="menu-item"><Link 
         style={{ textDecoration: 'none', height: '100%', width: '100%', color: 'white', fontSize: '1.2rem' }} 
-        to="/create">Create</Link></li>
+        to="/signin">Create</Link></li>
         <li className="menu-item"><Link 
         style={{ textDecoration: 'none', height: '100%', width: '100%', color: 'white', fontSize: '1.2rem' }} 
         to="/contact">Contact</Link></li>
