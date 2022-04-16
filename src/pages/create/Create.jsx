@@ -16,10 +16,6 @@ const Create = () => {
             <input type="text" name="title" id="title" />
           </div>
           <div className="form-control">
-            <label htmlFor="description">Description</label>
-            <input type="text" name="description" id="description" />
-          </div>
-          <div className="form-control">
             <label htmlFor="author">Author</label>
             <input type="text" name="author" id="author" />
           </div>
@@ -27,7 +23,11 @@ const Create = () => {
             <label htmlFor="image">Image URL</label>
             <input type="text" name="image" id="image" />
           </div>
-          <div className="form-control">
+          <div className="form-data">
+            <label htmlFor="description">Description (45 to 55 words)</label>
+            <textarea type="text" name="description" id="description" />
+          </div>
+          <div className="form-data">
             <label htmlFor="content">Content</label>
             <textarea name="content" id="content"></textarea>
           </div>

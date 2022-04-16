@@ -1,12 +1,13 @@
 .create {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .create-container {
-  width: 50%;
+  width: 65%;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 50px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
@@ -25,7 +26,7 @@
 }
 
 .form {
-  padding: 10px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -38,7 +39,14 @@
   flex-wrap: wrap;
 }
 
+label {
+  flex: 1;
+  display: block;
+  margin: 10px auto;
+}
+
 input {
+  flex: 4;
   width: 40%;
   font-size: 15px;
   padding: 5px 7px;
@@ -47,22 +55,22 @@ input {
   margin: 5px auto;
 }
 
-.message {
+.forn-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
-  margin: auto;
 }
 
-label {
-  display: block;
-  margin: 10px auto;
+.form-data textarea {
+  width: 95%;
 }
 
-textarea {
-  padding: 5px 8px;
-  resize: none;
-  width: 90%;
-  min-height: 80px;
-  border-radius: 5px;
+#content {
+  height: 500px;
+  overflow-wrap: break-word;
+  overflow-y: auto;
 }
 
 input:focus,

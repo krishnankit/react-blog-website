@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className='navbar'>
       <div>
       <div className="branding">
-        <h1><span>KD</span>Blogs</h1>
+        <Link style={{textDecoration: "none", color: "white"}} to="/"><h1><span>KD</span>Blogs</h1></Link>
       </div>
       <ul className="menu">
         <li className="menu-item"><Link 

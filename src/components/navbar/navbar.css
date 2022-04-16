@@ -4,6 +4,10 @@
   padding: 20px;
 }
 
+.branding {
+  cursor: pointer;
+}
+
 .branding span {
   padding: 5px;
   background-color: white;

@@ -7,19 +7,19 @@ const Contact = () => {
     <div className='contact'>
       <Navbar />
       <div className="contact-container">
-        <div className="heading">
+        <div className="contact-heading">
           <h1>Contact Us</h1>
         </div>
-        <div className="form">
-          <div className="form-control">
+        <div className="contact-form">
+          <div className="contact-form-control">
             <input type="text" placeholder='First Name'/>
             <input type="text" placeholder='Last Name'/>
           </div>
-          <div className="form-control">
+          <div className="contact-form-control">
             <input type="email" placeholder='Email'/>
             <input type="text" placeholder='Contact No'/>
           </div>
-          <div className="message">
+          <div className="contact-message">
             <label htmlFor="message">Write Your Message below</label>
             <textarea id='message'></textarea>
           </div>
